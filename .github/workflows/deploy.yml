@@ -67,7 +67,7 @@ jobs:
     if: github.event.inputs.environment == 'staging' || github.event_name == 'push'
     environment:
       name: staging
-      url: https://staging.gravitnetwork.org
+      url: https://staging.gravit.space
 
     steps:
       - name: Checkout code
@@ -94,7 +94,7 @@ jobs:
     if: github.event.inputs.environment == 'production'
     environment:
       name: production
-      url: https://gravitnetwork.org
+      url: https://gravit.space
 
     steps:
       - name: Checkout code
@@ -117,4 +117,4 @@ jobs:
       - name: Health check
         run: |
           sleep 30
-          curl --retry 10 --retry-delay 5 --fail https://gravitnetwork.org/health
+          curl --retry 10 --retry-delay 5 --fail https://gravit.space/health
