@@ -5,7 +5,7 @@ setup(
     version="1.0.0",
     description="Python SDK for Gravit Open Network",
     author="Gravit Open Network Foundation",
-    author_email="info@gravitnetwork.org",
+    author_email="ietf@gravit.space",
     packages=find_packages(),
     install_requires=[
         "httpx>=0.24.0",

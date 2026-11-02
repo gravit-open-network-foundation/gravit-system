@@ -13,7 +13,7 @@ class GravitClient:
     Client for Gravit Open Network API.
 
     Example:
-        client = GravitClient(base_url="https://api.gravitnetwork.org")
+        client = GravitClient(base_url="https://api.gravit.space")
         hypothesis = client.generate_hypothesis(
             prompt="Will AI surpass human intelligence?",
             llm="grok"
